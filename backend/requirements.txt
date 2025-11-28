@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy==1.4.49
+alembic
+passlib
+python-jose[cryptography]
+python-dotenv
+boto3
+email-validator
