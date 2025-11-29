@@ -20,7 +20,7 @@ if not DATABASE_URL:
     password = secret["password"]
     host = secret["host"]
     port = secret.get("port", 5432)
-    dbname = secret.get("database") or secret.get("dbname") or "my-mvp-startup-db"
+    dbname = secret.get("database") or secret.get("dbname") or "postgres"
 
     DATABASE_URL = f"postgresql://{user}:{password}@{host}:{port}/{dbname}"
 
